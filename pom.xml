@@ -23,9 +23,9 @@
 	</organization>
 
 	<scm>
-		<connection>scm:svn:https://svn.openmrs.org/openmrs-modules/accounting/trunk/</connection>
-		<developerConnection>scm:svn:https://svn.openmrs.org/openmrs-modules/accounting/trunk/</developerConnection>
-		<url>https://svn.openmrs.org/openmrs-modules/accounting/trunk/</url>
+		<connection>scm:git:https://github.com/uonafya/accounting.git</connection>
+		<developerConnection>scm:git:https://github.com/uonafya/accounting.git</developerConnection>
+		<url>https://github.com/uonafya/accounting.git</url>
 		<tag>HEAD</tag>
 	</scm>
 	
@@ -36,6 +36,7 @@
 
 	<properties>
 		<openMRSVersion>1.9.7</openMRSVersion>
+		<hospitalcoreVersion>1.0.0-SNAPSHOT</hospitalcoreVersion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -92,6 +93,12 @@
 			</dependency>
 
 			<!-- End OpenMRS core -->
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>hospitalcore-api</artifactId>
+				<version>${hospitalcoreVersion}</version>
+				<scope>provided</scope>
+			</dependency>
 
 		</dependencies>
 	</dependencyManagement>
